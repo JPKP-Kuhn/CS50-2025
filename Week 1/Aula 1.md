@@ -72,3 +72,159 @@ Agora para que no printf() tenha a variável, é necessário fazer assim:
 printf("hello, %s\n", answer )
 ```
 %s é um placeholder. %s está dizendo que será uma string
+
+## Alguns comandos de terminal importantes
+1. cd - change directory, para entrar numa pasta, para retornar para o parent é com .. ou só cd retorna pra origem
+2. cp - copy, faz uma cópia de um arquivo, podendo colocar um novo nome para essa cópia
+3. mv - move, para mover um arquivo para dentro de um diretório ou mudar o nome do arquivo
+4. rm - remove, remove o arquivo
+5. mkdir - make directory, cria um diretório
+6. rmdir - remove directory, apaga o diretório, não vazio, mas pode forçar para fazer
+
+## #Data_types, tipos primitivos no C
+Tipos de dados - 
+- String - um texto, conjunto de texto “” aspas duplas
+- bool - true ou falseá
+- char - caractere, ‘’ aspas simples
+- int - número inteiro
+- double, float, longer
+
+## #Format_code
+%s - string
+$i - int
+
+## #Condicionais
+if (x < y)
+{
+	printf(“x é menor do que y\n“);
+}
+- - -
+if (x < y)
+{
+	printf(“x é menor do que y\n);
+}
+else
+{
+	printf(“x não é menor do que y\n);
+}
+
+if (x < y)
+{
+
+}
+else if (x > y)
+{
+
+}
+else if ( x == y)
+{
+
+}
+
+## #Operators
+- =
+- >
+- <
+- <=
+- >=
+- ==
+- !=
+
+## #Variables
+Guardar algum valor:
+int counter = 0; Precisa dizer que tipo de variável ela é 
+counter = counter + 1; //adiciona 1 a essa variável. Também pode ser counter += 1; ou ainda counter++; ou para subtrair é counter–;
+
+#### Fluxograma do código compare.c
+[[fluxograma do código compare.c]]
+É importante se atentar ao design do código. Encadeando um monte de if else, não é bom, pois o fluxo do código passará por todos esses if, por todas essas perguntas, e às vezes pode não ser necessário passar por todas elas.
+
+## #Loop
+while(){} só para de executar quando a condição não é mais satisfeita.
+esse é o #while_loop e também tem o #for_loop que escreve tudo em uma linha só
+
+```
+int i = 0;
+while (i <= 3)
+{
+	printf("oi\n");
+	i++;
+}
+```
+- - - 
+```
+for (int i = 0; i <= 3; i++)
+{
+	printf("oi\n");
+}
+```
+
+## Argumento em funções
+```
+#include <stdio.h>
+#include <cs50.h>
+
+void meow(int n); //prototipo da funcao
+
+int main(void)
+{
+    meow(3);
+}
+
+void meow(int n)
+{
+  for (int i = 0; i < n; i++)
+  {
+    printf("meow\n");
+  }
+}
+```
+
+## Scope
+Variáveis só existem no escopo em que foram criadas
+
+## Coisas importantes no mundo da programação
+- Correção: o código precisa fazer o que se espera que seja feito, se não, não faz sentido escrevê-lo.
+- design: a forma como organiza o seu código, seja para que funcione melhor ou para que seja mais compreensível.
+- style: Se está bem comentado, bem explicado, fácil de implementar ou entender.
+
+### #Constants
+Variáveis que são constantes e não podem ser modificadas
+
+### #Comments
+Comentários para explicar o código.
+
+### #Operadores
++, -, *, %, /
+- = assignment operator - vai atribuir algum valor a uma variável
+
+### #Integer_overflow
+Com 32 bits conseguimos representar 4 bilhões de números, então até 2 bilhões positivo e 2 bilhões negativo. Dessa maneira, quando passamos desse valor que o 32 bit consegue representar, o próximo encremento de bit acaba bugando todos os outros. Não há um 33º bit, então todos os outros flipam para 0, pois o 33º deveria ser 1, mas ele não está lá. Não há memória suficiente. Se contar alto o suficiente, as coisas podem quebrar. Se há um limite de memória, é possível que ocorra um overflow.
+
+- int no c, só tem um limite de 32 bit, mas há um outro tipo chamado long o que representa uma versão maior do int, agora com 64 bit
+
+### #Truncation
+int / int = int. se a resposta for decimal, só sairá o valor inteiro, então, não está arredondando, está truncado.
+No c, apenas converter o número para float, não é o suficiente. Ambos precisam estar em float. Para converter o tipo de um número, eu preciso usar o casting.
+Float usa 32 bit também
+### #Floating-point_imprecision
+Imprecisão do float, ele tem um limite de até quando pode ser preciso
+
+### #Magic_number
+Números que se repetem muito no código e que são comuns, como o total de cartas em um baralho, podem ser definidos como uma constante. Não uma variável global porque assim o código é menos seguro. No c, há um preprocessor directive, também chamado de macro, para criar constantes simbólicas.:
+```
+	#define NAME REPLACEMENT
+	// por exemplo
+	#define PI 3.14159265
+	#define COURSE "cs50"
+
+	#define DECKSIZE 52
+	card deal_cards(deck name)
+	{
+		for (int i = 0; i < DECKSIZE; i++)
+		{
+			//deal the cardo
+		}
+	}
+```
+Não é obrigatório que o define seja sempre em capital, mas é bom para diferenciar de uma variável. O DECKSIZE é imutável, não dá pra fazer DECKSIZE++

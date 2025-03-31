@@ -2,7 +2,7 @@
 Links: cs50.ai e cs50.dev
 ### Introdução
 
-Ciências da computação é o estudo da informação, como a representamos e como a processamos.
+#Ciências_da_computação é o estudo da informação, como a representamos e como a processamos.
 Mas, mais importante é o [pensamento computacional](https://en.wikipedia.org/wiki/Computational_thinking) → resolver problemas do nosso interesse.
 
 Computer science === Problem Solving
@@ -16,7 +16,7 @@ Há diversa formas de representar dados como números:
 - E se contarmos até 31 com apenas uma mão? Usando números binários, 0 (0 em binário) é a mão fechada, 1 (1 em binário) com o polegar, 2 (10 em binário) com apenas o indicador levantado, 3 (11) com o indicador e o polegar levantados, 4 (100) com apenas o dedo do meio levantado. Com os 5 (11111) dedos, será o número 31. Assim é a notação em base - 2, sendo o valor expresso apenas se o dedo está abaixado ou levantado. Há apenas dois estados possíveis.
 - Base - 10, mais usado entre os humanos
 
-#### Sistema binário
+####  #Sistema_binário
 Há apenas duas possibilidades, 0 ou 1. Representa-se um bit, um dígito binário, apenas um 0 ou um 1. Ao invés do decimal, com 10 possibilidades, há apenas dois bits para representar a informação. O componente eletrônica responsável por ligar e desligar é o transistor, assim sendo possível guardar informação (com uma grande quantidade de transistor, terá mais informação possível). Representação do 7 (111) em binários, mas matematicamente:
 $$1 * 2² + 1 * 2¹ + 1 * 2⁰ = 7$$
 Potência de 2 para representar cada coluna dos números.
@@ -42,10 +42,10 @@ No início do cinema era utilizado várias imagens, motion pictures. Um vídeo n
 ### Como representar som?
 O som precisa ser digital, cada frequência também é armazenada. Precisa da informação da frequência, para a nota, o tom, a duração. Podemos assim ter 3 bytes ou 4.
 
-### A programação é o jeito como tratamos esses bits para terem o output desejado
+### A #programação é o jeito como tratamos esses bits para terem o output desejado
 Escrever como queremos que o computador trate esses 0 e 1
 
-### Algorítimo
+###  #Algorítimo
 É uma descrição bem **precisa** sobre como fazer alguma coisa.
 Se eu precisasse procurar o telefone do João em uma lista telefônica, como poderia ser meu algoritmo para encontrá-lo?
 1. Posso folhear página por página até encontrá-lo.
@@ -63,7 +63,7 @@ Se considerarmos o 1º exemplo em um gráfico levaria um tempo para resolver que
 
 No momento de aplicar algorítimos, para um programador, um cientista da computação, precisa decidir qual deles é o melhor a se usar e traduzí-lo para uma linguagem de programação, seja Python, Ruby, C, C++, qualquer linguagem.
 
-### Pseudocódigo
+###  #Pseudocódigo
 É um forma de criar um código, mas utilizando a própria língua para criar o algoritmo. Não há uma regra, apenas diga o que você quer que aconteça.
 Instruções -
 1. Pegue o livro de telefones
