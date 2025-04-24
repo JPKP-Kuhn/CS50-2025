@@ -34,3 +34,4 @@ int main(void)
   }
 }
 // print #, pula linha printa ##, pula linha printa ### e assim até printar a quantidade de height
+
