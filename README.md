@@ -8,3 +8,7 @@ Decidi realizar esse curso como uma introdução para a minha faculdade de ciên
 ## Projetos desenvolvidos ao longo do curso
 - Week 0 -
     1. [Scracth game](https://scratch.mit.edu/projects/1144569747/)
+
+- Week 1 -
+    1. [Mario stairs](/Week%201/problem-set-1/mario-less/)
+    2. [Cash](/Week%201/problem-set-1/cash/)
