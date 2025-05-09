@@ -87,3 +87,20 @@ Um detalhe importante é que o computador sabe que é o fim de uma string porque
   printf("%c%c%c\n", words[1][0], words[1][1], words[1][2]); // Primeiro pro índice 0, depois pro caracter, um array de array de caracteres
 ```
 words[0] é a palavra “HI!” que é um array de caracteres
+
+
+### Comprimento de uma string
+Pode só fazer um for para contar até acabar no \0 ou só usar o código que outra pessoa já escreveu.
+Realmente, tem a biblioteca string.h que possui uma função que implementa isso, strlen();
+Além disso, temos muitas outras para diversas funções.
+*Curiosidade: Na tabela ASCII a distância entre letras maiúscula para minúscula é de 32
+
+### Argumentos de entrada
+int main(int argc, string argv[])
+argc - Conta quantos argumentos estão sendo fornecidos
+argv - vetor, outra palavra pra array
+
+### Exemplos de saída
+A saída pode ser um número, como um código de erro. Servem para padronizar o que pode ocorrer de errado em um programa.
+Quando tem return 0 está tudo certo. Quando é qualquer outro número, representa um erro
+
