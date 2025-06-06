@@ -12,3 +12,9 @@ Decidi realizar esse curso como uma introdução para a minha faculdade de ciên
 - Week 1 -
     1. [Mario stairs](/Week%201/problem-set-1/mario-less/)
     2. [Cash](/Week%201/problem-set-1/cash/)
+
+- Week 2 -
+    1. [Scrabble](https://github.com/JPKP-Kuhn/CS50-2025/blob/main/Week%202/problem-set-2/scrabble.c)
+    2. [Readability](https://github.com/JPKP-Kuhn/CS50-2025/blob/main/Week%202/problem-set-2/readablity.c)
+    3. [Caesar](https://github.com/JPKP-Kuhn/CS50-2025/blob/main/Week%202/problem-set-2/caesar.c)
+    4. [Substitution](https://github.com/JPKP-Kuhn/CS50-2025/blob/main/Week%202/problem-set-2/substitution.c)
