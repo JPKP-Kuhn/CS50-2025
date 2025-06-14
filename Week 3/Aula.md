@@ -99,3 +99,11 @@ else
 Aponta para a metade, então compara o primeiro da metade da esquerda com o primeiro da metade direita. Eficiência de O(n), mas ele precisa de uma outra lista para poder organizar
 Ele vai dividindo a lista pela metade até os dois primeiros elementos e aí compara os dois, organiza eles e então coloca de volta na lista original.
 Fica como um O(logN), mas como precisa repetir esse processo de acordo com o tamanho da lista, então o big O do merge sort é de O(n log n)
+
+ 
+| Sorting Algorithm | Big O | Big Ω|
+| ------------- | -------------- | -------------- |
+| Selection Sort | O(n²) | Ω(n²) |
+| Bubble Sort | O(n²) | Ω(n) |
+| Merge Sort | O(n log n) | Ω(n log n) |
+

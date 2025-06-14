@@ -1,0 +1,55 @@
+I executed in the terminal with `time` comand and I am considering the real time.
+
+sort1 uses: TODO
+Random -
+To execute `time ./sort1 random5000.txt` and the values was between 0m0,054s and 0m0,088s.
+To execute `time ./sort1 random10000.txt` and the values was between 0m0,185s and 0m0,231s that is the slowest one.
+To execute `time ./sort1 random50000.txt` and the values was between 0m6,391s and 0m6,819s.
+
+Reversed -
+To execute `time ./sort1 reversed5000.txt` and the values was between 0m0,064s and 0m0,092s.
+To execute `time .sort1 reversed10000.txt` and the values was between 0m0,209s and 0m0,235s.
+To execute `time .sort1 reversed50000.txt` and the values was between 0m6,126s and 0m6,542s.
+
+Sorted -
+To execute `time ./sort1 sorted5000.txt` and the values was between 0m0,020s and 0m0,025s.
+To execute `time ./sort1 sorted10000.txt` and the values was between 0m0,041s and 0m0,070s.
+To execute `time ./sort1 sorted50000.txt` and the values was between 0m1,119s and 0m1,228.
+
+sort2 uses: TODO
+
+Random -
+To execute `time ./sort2 random5000.txt` and the values was between 0m0,021s and 0m0,036.
+To execute `time ./sort2 random10000.txt` and the values was between 0m0,043s and 0m0,100s, that is a lot faster than the others.
+To execute `time ./sort2 random50000.txt` and the values was between 0m1,805s and 0m3,005.
+
+Reversed -
+To execute `time ./sort2 reversed5000.txt` and the values was between 0m0,021s and 0m0,029.
+To execute `time ./sort2 reversed10000.txt` and the values was between 0m0,043s and 0m0,057.
+To execute `time ./sort2 reversed50000.txt` and the values was between 0m1,430s and 0m3,158. More values below 2 seconds
+
+Sorted -
+To execute `time ./sort2 sorted5000.txt` and the values was between 0m0,020s and 0m0,029.
+To execute `time ./sort2 sorted10000.txt` and the values was between 0m0,041s and 0m0,058.
+To execute `time ./sort2 sorted50000.txt` and the values was between 0m1,669s and 0m2,053.
+
+sort3 uses: TODO
+
+Random -
+To execute `time ./sort3 random5000.txt` and the values was between 0m0,040s and 0m0,040s.
+To execute `time ./sort3 random10000.txt` and the values was between 0m0,116s and 0m0,149s, that is in the mid.
+To execute `time ./sort3 random50000.txt` and the values was between 0m2,932s and 0m3,065s.
+
+Reversed -
+To execute `time ./sort3 reversed5000.txt` and the values was between 0m0,038s and 0m0,050s.
+To execute `time ./sort3 reversed10000.txt` and the values was between 0m0,125s and 0m0,203s.
+To execute `time ./sort3 reversed50000.txt` and the values was between 0m3,059s and 0m3,875s.
+
+Sorted -
+To execute `time ./sort3 sorted5000.txt` and the values was between 0m0,040s and 0m0,051s.
+To execute `time ./sort3 sorted10000.txt` and the values was between 0m0,110s and 0m0,132s.
+To execute `time ./sort3 sorted50000.txt` and the values was between 0m3,121s and 0m3,751s.
+
+
+
+
