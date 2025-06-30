@@ -9,7 +9,7 @@ int main(void)
   int height = get_int("Height: ");
   draw(height);
 
-  printf("Now let's do it with a ercursive function!\n");
+  printf("Now let's do it with a recursive function!\n");
   newDraw(height);
 }
 
