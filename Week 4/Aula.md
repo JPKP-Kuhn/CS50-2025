@@ -73,3 +73,6 @@ Esses dois são exemplos de buffer overflow, sendo um buffer um chunk de memóri
 Entrada e saída de dados. No C se usa scanf() que recebe o endereço da variável para atribuir um valor a ela. Problema se for uma string, pois se eu não inicializá-la com um tamanho de bytes, ela será um ponteiro para algum lugar com lixo, o que pode causar problemas. Até mesmo se alocar um espaço grande pra string, eu ainda posso passar esse valor.
 
 Também, como acessar arquivos? Há várias funções para isso.
+
+## Primeiro problem-set
+Para leitura de arquivos é usado o tipo FILE que será um ponteiro para cada byte do arquivo a ser lido. fread() guarda a posição do ponteiro, ou seja, se eu primerio fazer um fread() até o byte 44, da próxima vez que eu executar fread(), o ponteiro já estará posicionado no byte 45.
