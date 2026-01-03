@@ -48,7 +48,7 @@ Conhecidos como problem sets. São as atividades após cada aula, alguns possuem
   
   1. [Inheritance](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%205/problem-set/inheritance)
   2. [Speller](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%205/problem-set)
-    * Fiz três aplicações diferentes, uma com uma função hash simples, apenas verificando a primeira letra, depois melhorei usando a função hash DJB2. Por fim, a solução mais eficiente usando uma trie.
+  * Fiz três aplicações diferentes, uma com uma função hash simples, apenas verificando a primeira letra, depois melhorei usando a função hash DJB2. Por fim, a solução mais eficiente usando uma trie.
 
 ### - Week 6 -
   Aprendi sobre Python e sobre as bibliotecas e análise de dados, escrever código fica muito mais fácil comparado ao C. Foram refeitas algumas atividades das primeiras semanas.
@@ -58,8 +58,7 @@ Conhecidos como problem sets. São as atividades após cada aula, alguns possuem
   4. [Cash](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/sentimental-cash)
   5. [Credit](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/sentimental-credit)
   6. [Readability](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/sentimental-readability)
-  7. [DNA](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/dna)
-     * O verdadeiro desafio da semana de Python
+  7. [DNA](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/dna) * O verdadeiro desafio da semana de Python
 
 ### - Inteligência Artificial -
   Aprendi o básico sobre o que é e como funciona uma Inteligência Artificial, também como usar ela em código.
