@@ -62,8 +62,8 @@ Conhecidos como problem sets. São as atividades após cada aula, alguns possuem
   7. [DNA](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/dna)
 
   ### - Inteligência Artificial -
-  Aprendi o básico sobre o que é e como funciona uma Inteligência Artificial, também como usar ela em código.
-  [Artificial Inteligence](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Artificial%20Intelligence)
+      Aprendi o básico sobre o que é e como funciona uma Inteligência Artificial, também como usar ela em código.
+      [Artificial Inteligence](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Artificial%20Intelligence)
 
   ### - Week 7 -
     SQL, funções básicas de um CRUD, criar tabelas, ler informações, atualizar e deletar. Sintaxe básica de SQL com sqlite3.
