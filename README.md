@@ -49,3 +49,25 @@ Conhecidos como problem sets. São as atividades após cada aula, alguns possuem
   1. [Inheritance](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%205/problem-set/inheritance)
   2. [Speller](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%205/problem-set)
     * Fiz três aplicações diferentes, uma com uma função hash simples, apenas verificando a primeira letra, depois melhorei usando a função hash DJB2. Por fim, a solução mais eficiente usando uma trie.
+
+### - Week 6 -
+  Aprendi sobre Python e sobre as bibliotecas e análise de dados, escrever código fica muito mais fácil comparado ao C. Foram refeitas algumas atividades das primeiras semanas.
+  1. [Hello](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/sentimental-hello)
+  2. [Mario-Less](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/sentimental-mario-less)
+  3. [Mario-More](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/sentimental-mario-more)
+  4. [Cash](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/sentimental-cash)
+  5. [Credit](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/sentimental-credit)
+  6. [Readability](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/sentimental-readability)
+  O verdadeiro desafio da semana de Python
+  7. [DNA](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%206/problem-set/dna)
+
+  ### - Inteligência Artificial -
+  Aprendi o básico sobre o que é e como funciona uma Inteligência Artificial, também como usar ela em código.
+  [Artificial Inteligence](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Artificial%20Intelligence)
+
+  ### - Week 7 -
+    SQL, funções básicas de um CRUD, criar tabelas, ler informações, atualizar e deletar. Sintaxe básica de SQL com sqlite3.
+    Básico sobre banco de dados relacionais, relações One to One, One to Many e Many to Many, Race conditions e Indexes.
+    1. [Songs](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%207/problem-set/songs)
+    2. [Movies](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%207/problem-set/movies)
+    3. [Fiftyville](https://github.com/JPKP-Kuhn/CS50-2025/tree/main/Week%207/problem-set/fiftyville)
