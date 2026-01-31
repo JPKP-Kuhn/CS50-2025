@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hello</title>
+</head>
+<body>
+  <!-- return false significa apenas que o form nunca é enviado para o servidor-->
+  <!--Posso usar o onsubmit, mas estou inserindo código javascript no html-->
+  <form onsubmit="greet(); console.log('oi'); return false;">
+    <input autocomplete="off" autofocus id="name" name="name" placeholder="Name" type="text">
+    <input type="submit">
+  </form>
+  <script>
+    
+    // onsubmit
+    function greet(event){
+      let name = document.querySelector('#name').value;
+      alert('Hello, ' + name);
+      event.preventDefault();
+    }
+
+    let form = document.querySelector('form'); // script precisa ser no final, pois está chamando form
+    form.addEventListener('submit', function (event){ // lambda function, or anonymous function, porque só será usado uma vez
+      alert('hello, ' + document.querySelector('#name').value);
+      event.preventDefault();
+    }); // greet será chamado depois, aqui só estou declarando
+
+  </script>
+</body>
+</html>
