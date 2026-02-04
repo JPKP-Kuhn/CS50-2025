@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <script>
+      // TODO: Add code to check answers to questions
+      function feedbackParagraph(button, message){
+        const feedbackP = button.closest('.question').querySelector('p');
+        feedbackP.textContent = message;
+      }
+
+      function checkButton(){
+        const buttons = document.querySelectorAll('.question button');
+        buttons.forEach((button) => {
+          button.addEventListener('click', function (event) {
+            if (button.id === 'c') {
+              button.style.backgroundColor = 'green';
+              feedbackParagraph(button, 'Correct!');
+            } else {
+              button.style.backgroundColor = 'red';
+              feedbackParagraph(button, 'Incorrect');
+            }
+          });
+        });
+      }
+      const correctTexts = ['oceania', 'canada']
+      function checkText1(event) {
+        if (event && typeof event.preventDefault === 'function') event.preventDefault();
+        const input1 = document.querySelector('#text-1');
+        const text1 = input1.value.trim().toLowerCase();
+
+        const feedback1 = document.querySelector('#incorrect-text-5');
+
+        if (text1 === correctTexts[0]) {
+          feedback1.textContent = 'Correct!';
+          input1.style.backgroundColor = 'lightgreen';
+        } else {
+          feedback1.textContent = 'Incorrect';
+          input1.style.backgroundColor = '#ffd6d6';
+        }
+      }
+      function checkText2(event) {
+        if (event && typeof event.preventDefault === 'function') event.preventDefault();
+        const input2 = document.querySelector('#text-2');
+        const text2 = input2.value.trim().toLowerCase();
+
+        const feedback2 = document.querySelector('#incorrect-text-6');
+
+        if (text2 === correctTexts[1]) {
+          feedback2.textContent = 'Correct!';
+          input2.style.backgroundColor = 'lightgreen';
+        } else {
+          feedback2.textContent = 'Incorrect';
+          input2.style.backgroundColor = '#ffd6d6';
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function () { checkButton(); });
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Countries Trivia!</h1>
+    </div>
+    <div class="container">
+      <div class="section">
+        <h2>Part 1: Multiple Choice </h2>
+        <hr>
+          <!-- TODO: Add multiple choice question here -->
+          <div class="question">
+            <h3>What is the biggest country in the world?</h3>
+            <p id='incorrect-text-1'></p>
+            <button type="submit" id="w">United States</button>
+            <button type="submit" id="c">Russia</button>
+            <button type="submit" id="w">Brazil</button>
+            <button type="submit" id="w">China</button>
+            <button type="submit" id="w">Canada</button>
+          </div>
+
+          <div class="question">
+            <h3>What is the country if most wins in FIFA World Cup Soccer</h3>
+            <p id='incorrect-text-2'></p>
+            <button type="submit" id="w">Argentina</button>
+            <button type="submit" id="w">Uruguay</button>
+            <button type="submit" id="c">Brazil</button>
+            <button type="submit" id="w">Germany</button>
+            <button type="submit" id="w">United Kingdom</button>
+            <button type="submit" id="w">Portugal</button>
+          </div>
+
+          <div class="question">
+            <h3>What is the oldest country in the world?</h3>
+            <p id='incorrect-text-3'></p>
+            <button type="submit" id="w">France</button>
+            <button type="submit" id="w">Greece</button>
+            <button type="submit" id="c">San Marino</button>
+            <button type="submit" id="w">Vatican Country</button>
+            <button type="submit" id="w">Spain</button>
+            <button type="submit" id="w">China</button>
+            <button type="submit" id="w">India</button>
+            <button type="submit" id="w">Ethiopia</button>
+          </div>
+
+          <div class="question">
+            <h3>The country with the oldest population in number?</h3>
+            <p id='incorrect-text-4'></p>
+            <button type="submit" id="w">Japan</button>
+            <button type="submit" id="w">Italy</button>
+            <button type="submit" id="w">France</button>
+            <button type="submit" id="w">India</button>
+            <button type="submit" id="c">China</button>
+            <button type="submit" id="w">United States</button>
+          </div>
+      </div>
+
+      <div class="section">
+        <h2>Part 2: Free Response</h2>
+        <hr>
+        <!-- TODO: Add free response question here -->
+        <form class="question-text" onsubmit="checkText1(); return false;">
+          <h3>The name of the smallest continent in the world</h3>
+          <p id="incorrect-text-5"></p>
+          <input type="text" id="text-1">
+          <button type="submit">Check Answer</button>
+        </form>
+
+        <form class="question-text" onsubmit="checkText2(); return false;">
+          <h3>The name of the second biggest country in the world</h3>
+          <p id="incorrect-text-6"></p>
+          <input type="text" id="text-2">
+          <button type="submit">Check Answer</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
